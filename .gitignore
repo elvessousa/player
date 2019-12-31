@@ -31,3 +31,5 @@ Temporary Items
 /bower_components
 /docs
 /test
+.jekyll-metadata
+/_site
