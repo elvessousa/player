@@ -1,0 +1,300 @@
+// ----------------------------------------------------
+// Base
+// ----------------------------------------------------
+body
+  margin: 0
+  padding: 0
+
+h1
+  font-weight: 700
+  margin: 0
+  padding: 0
+  text-align: center
+
+h3
+  color: $indice-link
+  font-weight: 900
+
+h4
+  color: #000
+  font-weight: 900
+
+h5
+  margin-bottom: .5em
+
+p
+  color: #888
+
+pre
+  margin: 1em
+
+code
+  border-radius: 3px
+  line-height: 1em
+
+figure
+  font-size: .8em
+  margin: 2em 0
+  overflow: scroll
+
+hr
+  border: 0
+  border-top: 2px solid darken($border-color, 6.5%)
+  margin: 2em 0
+
+blockquote
+  margin: 0
+
+.container
+  max-width: 80vw !important
+
+// ----------------------------------------------------
+// Documentation
+// ----------------------------------------------------
+.documentation
+  background: url('../img/grid.png') fixed
+
+// ----------------------------------------------------
+// Navigation
+// ----------------------------------------------------
+.navigation
+  left: 0
+  position: absolute
+  right: 0
+  top: 0
+  z-index: 1
+
+  @media #{$phone}
+    padding: 15px 0
+
+  @media #{$tablet}
+    padding: 15px 0
+
+
+  li
+    list-style: none
+
+  a
+    color: $accent-text
+    font-weight: 100
+    text-decoration: none
+
+  .container
+    padding: 0
+
+  .links
+    text-align: right
+
+    a
+      padding: 1em
+
+.logo
+  font-size: 1.2em
+  font-weight: bold !important
+  padding: 10px
+  text-transform: uppercase
+
+  @media #{$phone}
+    text-align: center
+
+  @media #{$tablet}
+    text-align: center
+
+
+  img
+    opacity: .8
+
+.lang-icon
+  height: 60px
+  opacity: .5
+  position: absolute
+  right: 0
+  top: 0
+  width: 60px !important
+
+  &:hover
+    opacity: 1
+
+  &:hover::after
+    background: $lightest-color
+    border: 1px solid darken($border-color, 13.5%)
+    border-radius: 3px
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5)
+    color: $darkest-text
+    font-size: .6em
+    font-weight: normal
+    position: absolute
+    right: 1em
+    text-align: center
+    top: 1em
+    width: 8.5em
+
+  &.portuguese:hover::after
+    content: 'Em português'
+
+  &.english:hover::after
+    content: 'English version'
+
+.links
+  text-align: center
+
+.widget
+  p
+    color: $light-text
+    font-size: .8em
+    margin: 0
+
+.layout
+  border-bottom: 1px solid $border-color
+  border-top: 1px solid $border-color
+  padding: 40px 0
+
+.auto
+  flex: 1 1 0
+
+.stuff
+  text-align: center
+  width: 80%
+
+  > p
+    color: $accent-text
+    opacity: .5
+    text-align: center
+
+  img
+    margin: auto
+
+.full-header
+  background: $accent-color url('../img/splash.jpg') no-repeat center
+  background-size: cover
+  color: $accent-text
+  height: 100vh
+
+  h1
+    color: $accent-text
+    font-size: 4vw
+    text-align: center
+    text-transform: uppercase
+
+    span
+      display: block
+      font-weight: 900
+
+  .en-title
+    font-weight: 100
+    line-height: .9
+
+    span
+      font-size: 1.5em
+
+  .br-title
+    // font-size: 3em
+    font-weight: 100
+    line-height: .9
+
+    span
+      font-size: 2em
+      
+
+.post-header
+  background: $accent-color url('../img/splash.jpg') no-repeat center
+  background-size: cover
+  color: $accent-text
+  height: 30vh
+  margin: 0
+  min-height: 300px
+  position: relative
+
+.post-title
+  bottom: 0
+  font-weight: 900
+  left: 1.5em
+  line-height: .7
+  margin: 0
+  position: absolute
+
+.text
+  background: $lightest-color
+  padding: 0 3em 0
+ 
+.text-center
+  text-align: center
+
+// ----------------------------------------------------
+// Footer
+// ----------------------------------------------------
+footer
+  background: $footer-back
+  color: $lightest-color
+
+  h4,
+  p
+    color: $lightest-color
+
+    a
+      color: $lightest-color
+      font-weight: bold
+      opacity: .8
+
+      &:hover
+        color: $lightest-color
+        opacity: 1
+
+  input
+    &[type='image']
+      border: 1px solid darken($border-color, 52%)
+      margin: 0
+      padding: 5px
+
+    &:hover
+      border: 1px solid darken($border-color, 13.5%)
+
+  .desc
+    @media #{$phone}
+      text-align: center
+
+    @media #{$tablet}
+      text-align: center
+
+
+.footer-links
+  ul
+    list-style: none
+
+  a
+    color: lighten($light-text, 33.2%)
+    text-decoration: none
+
+// ----------------------------------------------------
+// Browser icons
+// ----------------------------------------------------
+.browser
+  text-align: center
+
+  span
+    display: block
+
+  i
+    font-size: 3em
+
+    &::before
+      display: block
+
+  .icon-ie
+    color: $color-ie
+
+  .icon-chrome
+    color: $color-chrome
+
+  .icon-edge
+    color: $color-edge
+
+  .icon-firefox
+    color: $color-firefox
+
+  .icon-safari
+    color: $color-safari
+
+  .icon-opera
+    color: $color-opera
+

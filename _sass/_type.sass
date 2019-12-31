@@ -1,0 +1,187 @@
+@import typevars
+
+body
+  font-family: $text-font
+  font-size: $base-size
+  font-weight: $base-weight
+  line-height: $line-height
+
+pre
+  font-family: $code-font !important
+  font-size: $code-size
+
+code
+  font-family: $code-font
+
+a
+  font-family: $title-font
+  font-weight: $base-weight
+  text-decoration: none
+  transition: all .5s ease-in-out
+
+  header &,
+  .full-header &,
+  .post-header &
+    color: $header-link
+
+  article &,
+  p &
+    color: $content-link
+
+    &:hover
+      color: lighten($content-link, 30%)
+
+  footer &,
+  footer p &
+    color: $footer-link
+
+    &:hover
+      color: darken($footer-link, 10%)
+
+  &[href$='.zip']
+    background: $button-color
+    border: 2px solid $button-color
+    border-radius: 3px
+    color: $lightest-text
+    display: inline-block
+    margin: 10px auto
+    max-width: 100%
+    padding: 1em
+    text-align: center
+    width: 10em
+
+    &:hover
+      background: lighten($button-color, 6.5%)
+      border: 2px solid lighten($button-color, 6.5%)
+      color: $accent-text
+
+  &[href$='/grade']
+    background: transparent
+    border: 0
+    border-radius: 3px
+    color: $dark-border
+    display: inline-block
+    margin: 10px auto
+    max-width: 100%
+    opacity: .5
+    padding: 1em
+    text-align: center
+    width: 10em
+
+    &:hover
+      opacity: 1
+
+h1,
+h2,
+h3,
+h4
+  font-family: $title-font
+  font-weight: inherit
+  line-height: 1.2
+  margin: 1.414em 0 .5em
+
+h1
+  font-size: $huge-title
+  margin-top: 0
+
+  .masthead &
+    font-size: $huge-title
+    font-weight: 900
+
+h2
+  font-size: $big-title
+
+h3
+  font-size: $normal-title
+
+h4
+  font-size: $big-text
+
+p
+  .masthead &
+    font-size: $big-text
+
+blockquote
+  font-size: $big-text
+  font-style: italic
+
+  cite
+    font-size: $small-text
+    text-align: center
+
+small,
+.font_small
+  font-size: $small-text
+
+img + em
+  font-size: 1em
+
+.site-link
+  font-size: $normal-title
+  font-weight: $light-weight
+  line-height: normal
+
+.site-url
+  font-size: $small-text
+  line-height: $small-text
+
+.social
+  li
+    font-size: 1.618em
+    line-height: 1em
+
+.language-link
+  color: $grey-text
+  font-weight: 100
+
+  &:hover
+    color: $lightest-text
+
+footer
+  .desc
+    text-align: right
+
+@media #{$phone}
+  h1
+    font-size: 300%
+
+  h2
+    font-size: 200%
+
+  h3
+    font-size: 180%
+
+  h4
+    font-size: 120%
+
+  blockquote
+    font-size: 1.2em
+    text-align: left
+
+    p
+      margin: 0
+
+  .masthead
+    h1
+      font-size: $big-title
+      line-height: 1em
+
+  .page-title
+    bottom: 20px
+    font-size: $big-title
+    line-height: 1em
+    position: absolute
+    z-index: 1
+
+  .page-header
+    height: 50vh
+
+  .site-link
+    font-size: 1.618em
+
+  footer
+    h4
+      margin: 0
+
+    .desc
+      text-align: right

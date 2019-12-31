@@ -1,0 +1,41 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset 'utf-8'
+
+// Colors
+$accent-color:    #c64218
+$lightest-color:  #fff
+$light-back:      #f8f8f8
+$darkest-color:   #000
+$item-color:      #bd6e40
+$footer-back:     #c64218
+$button-color:    #080
+// Grid
+$grid-color:      #bd6340
+$grid-back:       linear-gradient(0deg, darken($grid-color,5%), $grid-color)
+// Borders
+$border-color:    #eee
+$dark-border:     lighten($darkest-color, 13.5%)
+// Links
+$indice-link:     #bd4040
+$indice-hover:    darken($indice-link, 10%)
+// Syntax highlighting
+$code-back:       linear-gradient(180deg, black, #222)
+$arg-color:       #fde3bc
+$tag-color:       #d14
+$strings:         #ed8080
+$texts:           #675656
+// Browsers
+$color-ie:        #09f
+$color-chrome:    #fc0
+$color-edge:      #069
+$color-firefox:   #f60
+$color-safari:    #2196f3
+$color-opera:     #c00
+// Other
+$spacing-unit:    30px
+$scrollbars:      $item-color
+
+// Import partials
+@import syntax, grade, type, base, icons, scrollbars, menu, indice, grid_demo

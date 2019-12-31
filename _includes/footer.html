@@ -1,0 +1,19 @@
+<footer>
+  <section class="container columns">
+    <div class="name quarter certer vertical hidden-phone">
+      <h4 style="margin: .5em 0">Grade</h4>
+    </div>
+    <div class="desc">
+      {% assign version = page.language %}
+      {% case version %}
+      {% when 'pt' %}
+      <p>Feito por <a href="http://elvessousa.com.br">Elves Sousa</a> em São Paulo.</p>
+      {% else %}
+      <p>Made by <a href="http://elvessousa.com.br">Elves Sousa</a> in São Paulo.</p>
+      {% endcase %}
+    </div>
+  </section>
+  <script>
+    document.documentElement.setAttribute("data-browser", navigator.userAgent);
+  </script>
+</footer>
